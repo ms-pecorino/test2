@@ -45,7 +45,7 @@ h2::after {
 
 h3 {
   font-size: 1.6rem;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .txt1 {
@@ -131,7 +131,7 @@ main .mv img {
 
 @media screen and (max-width: 599px) {
   main .mv img {
-    height: calc(100hv - 60px);
+    height: calc(100vh - 60px);
   }
 }
 
@@ -208,7 +208,7 @@ main #sec2 ul.sec2__cont li {
   }
 }
 
-main #sec2 ul.sec2__cont li a::hover {
+main #sec2 ul.sec2__cont li a:hover {
   opacity: 0.3;
 }
 
