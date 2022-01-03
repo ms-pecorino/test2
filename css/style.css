@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*共通部分*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #707070;
+}
+
+a {
+  color: #707070;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 70px auto;
+  padding: 0 4% 0 4%;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  width: 63px;
+  background-color: #a30f0c;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-size: bold;
+}
+
+.txt1 {
+  font-size: 1.44rem;
+  line-height: 1.5;
+}
+
+.only-sp {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .only-sp {
+    display: block;
+  }
+}
+
+/*ヘッダー*/
+#header {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+#header h1 {
+  width: 120px;
+  height: auto;
+}
+
+#header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header nav ul li {
+  height: 40px;
+  margin-left: 30px;
+}
+
+#header nav ul li a {
+  font-size: 1.44rem;
+  line-height: 40px;
+  display: block;
+}
+
+#header nav ul li ahover {
+  opacity: 0.3;
+}
+
+/*メインビジュアル*/
+main {
+  /*sec1*/
+  /*sec2*/
+}
+
+main .mv {
+  margin-bottom: 80px;
+}
+
+main .mv img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 599px) {
+  main .mv img {
+    height: calc(100hv - 60px);
+  }
+}
+
+main #sec1 .sec1__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 599px) {
+  main #sec1 .sec1__cont {
+    display: block;
+  }
+}
+
+main #sec1 .sec1__cont .sec1__cont__img {
+  width: 100px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 599px) {
+  main #sec1 .sec1__cont .sec1__cont__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+main #sec1 .sec1__cont .sec1__cont__txt {
+  text-align: left;
+}
+
+@media screen and (max-width: 599px) {
+  main #sec1 .sec1__cont .sec1__cont__txt {
+    text-align: center;
+  }
+}
+
+main #sec1 .sec1__cont .sec1__cont__txt h3 {
+  margin-bottom: 20px;
+}
+
+main #sec2 ul.sec2__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 599px) {
+  main #sec2 ul.sec2__cont {
+    display: block;
+  }
+}
+
+main #sec2 ul.sec2__cont li {
+  width: 32%;
+}
+
+@media screen and (max-width: 599px) {
+  main #sec2 ul.sec2__cont li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+main #sec2 ul.sec2__cont li a::hover {
+  opacity: 0.3;
+}
+
+main #sec2 ul.sec2__cont li a h3 {
+  margin-top: 20px;
+}
+
+main #sec2 ul.sec2__cont li a .txt1 {
+  margin-top: 20px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/*page-top*/
+.page-top {
+  display: block;
+  z-index: 5;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #a30f0c;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 599px) {
+  .page-top {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.page-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 599px) {
+  .page-top::before {
+    width: 14px;
+    height: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
