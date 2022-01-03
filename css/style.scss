@@ -38,7 +38,7 @@ h2 {
 }
 h3 {
   font-size: 1.6rem;
-  font-size: bold;
+  font-weight: bold;
 }
 .txt1 {
   font-size: 1.44rem;
@@ -92,7 +92,7 @@ main {
       object-fit: cover;
       object-position: center;
       @media screen and (max-width: 599px) {
-        height: calc(100hv - 60px);
+        height: calc(100vh - 60px);
       }
     }
   }
@@ -142,7 +142,7 @@ main {
         }
 
         a {
-          &::hover {
+          &:hover {
             opacity: 0.3;
           }
           h3 {
